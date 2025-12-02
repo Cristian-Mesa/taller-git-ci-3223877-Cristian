@@ -1,4 +1,5 @@
-function suma(a, b) {
+// 1. CORRECCIÓN: Se añade 'export' a la función suma para que pueda ser testeada.
+export function suma(a, b) { 
     return a + b;
 }
 
@@ -15,3 +16,14 @@ function agregarItem(texto) {
 }
 
 console.log('App lista');
+
+// 2. CORRECCIÓN: Se añade el EventListener para el botón con ID,
+//    resolviendo el comentario sobre no usar 'onclick' en el HTML.
+document.addEventListener('DOMContentLoaded', () => {
+    const agregarBtn = document.getElementById('agregar-btn');
+    if (agregarBtn) {
+        agregarBtn.addEventListener('click', () => {
+            agregarItem('Elemento añadido por EventListener');
+        });
+    }
+});
