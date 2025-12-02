@@ -1,15 +1,9 @@
 {
-  "name": "taller-git-ci-3223877-cristianmesa",
-  "version": "1.0.0",
-  "description": "Proyecto de práctica con Git, GitHub, ramas, PR, Code Review y CI.",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test tests/suma.test.js",
-    "format:check": "prettier --check .",
-    "format:write": "prettier --write ."
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "prettier": "^3.7.3"
+  }
 }

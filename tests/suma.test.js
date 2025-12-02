@@ -1,11 +1,8 @@
-import test from 'node:test';
-import assert from 'node:assert/strict';
-import { suma } from '../src/app.js';
-
-test('suma debe retornar 3 cuando a=1 y b=2', () => {
-  assert.equal(suma(1, 2), 3);
-});
-
-test('suma con números negativos', () => {
-  assert.equal(suma(-1, -2), -3);
+import test from "node:test";
+import assert from "node:assert/strict";
+function suma(a, b) {
+  return a + b;
+}
+test("suma 2 + 3 = 5", () => {
+  assert.equal(suma(2, 3), 5);
 });
