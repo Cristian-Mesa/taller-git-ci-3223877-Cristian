@@ -1,7 +1,13 @@
-// Función de suma
-export function suma(a, b) {
-  return a + b;
+function suma(a, b) {
+    return a + b;
 }
 
-// Log de arranque
+// AÑADIR ESTA FUNCIÓN
+function agregarItem(texto) {
+    const lista = document.getElementById('lista');
+    const newItem = document.createElement('li');
+    newItem.textContent = texto;
+    lista.appendChild(newItem);
+}
+
 console.log('App lista');
